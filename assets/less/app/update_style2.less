@@ -1,0 +1,99 @@
+.header-style2{
+	.header-top{
+		background: #f8f8f8; border-bottom: 1px @border-color solid; min-height: 39px; padding-top: 0px;
+		.widget_nav_menu ul.menu li a, .top-login ul li a{
+			color: #666; border-color: @border-color;
+			&:hover{
+				color: @color;
+			}
+		}
+	}
+	#lang_sel > ul.nav > li > a, .currency_w > li > a{
+		color: #666; border-color: @border-color;
+		&:after{
+			color: #666;
+		}
+	}
+	.header-mid{
+		padding: 34px 0 40px 0;
+		.top-header{
+			display: flex; align-items: center; height: 50px;
+		}
+		.search-cate .top-form{
+			.topsearch-entry{
+				padding-left:0;
+				.rtl &{
+					padding-right:0;
+				}
+				.icon-loading.loading{
+					right: 95px;
+				}
+				.cat-wrapper{
+					display:none;
+				}
+				input{
+					border:1px solid @border-color;
+					height:40px;
+					padding-left:20px; padding-right:20px;
+					border-radius: 4px 0 0 4px;
+					.rtl &{
+						border-radius:0 4px 4px 0;
+					}
+				}
+				.button-search-pro{
+					background-color:lighten( @body-color, 14% );
+					border-radius:0 4px 4px 0;
+					height:40px;
+					line-height:40px;
+					width:auto;
+					padding:0 30px;
+					.rtl &{
+						border-radius: 4px 0 0 4px;
+					}
+					&:hover{
+						background-color:@color + #141415;
+					}
+				}
+			}
+		}
+		.furnihome-logo{
+			padding-top: 6px;
+		}
+	}
+	.header-bottom{
+		.nav-pills >li {
+			> a{
+				color: #fff;
+				&:hover{
+					color: @color;
+				}
+			}
+			&.active{
+				a{
+					color: @color;
+				}
+			}
+		}
+		.header-free{
+			color: @color; font-size: 14px; margin:20px 0; font-style: italic;
+		}
+	}
+	.furnihome_top .top-form.top-search{
+		margin-top: 1px;
+	}
+	.top-form.top-form-minicart{
+		margin-top: 7px;
+	}
+}
+.block-style1{
+	color: @color; font-size: 13px; font-weight: bold; text-transform: uppercase; padding: 16px 0;
+	.item{
+		border-right: 1px @color solid; text-align: center;
+		.rtl &{
+			border-right: none; border-left: 1px @color solid; 
+		}
+		&:last-child{
+			border: none;
+		}
+	}
+}

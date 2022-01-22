@@ -1,0 +1,1 @@
+<?php furnihome_content_detail_check() ?>

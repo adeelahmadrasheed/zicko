@@ -1,0 +1,451 @@
+/*=========== Title Sytle1===============*/
+.title-sytle1{
+	.box-title{
+		margin-bottom:14px; position: relative; text-align: center;
+		&:before{
+			content:'';
+			height:2px;
+			width:100%; position:absolute;
+			left: 0; bottom: 18px;
+			background-color:@border-color;
+		}
+		&:after{
+			content:'';
+			height:1px;
+			width:100%; position:absolute;
+			left: 0; bottom: 14px;
+			background-color:@border-color;
+		}
+		h3{
+			font-size: 36px; text-transform: uppercase; font-weight: bold; color: @body-color;
+			z-index: 9; position: relative; background: #fff;
+			display: inline-block; vertical-align: top;	padding: 0px 15px;
+		}
+	}
+	.description{
+		font-size:14px;
+		color:@body-color;
+	}
+}
+.title-sytle2{
+	.box-title{
+		margin-bottom:23px; position: relative;
+		&:before{
+			content:'';
+			height:2px;
+			width:100%; position:absolute;
+			left: 0; bottom: 0;
+			background-color:@border-color;
+		}
+		&:after{
+			content:'';
+			height:1px;
+			width:100%; position:absolute;
+			left: 0; bottom: -4px;
+			background-color:@border-color;
+		}
+		h2{
+			font-size: 20px; text-transform: uppercase; font-weight: bold; color: @body-color; padding: 10px 0 16px 0;
+		}
+	}
+}
+.title-sytle3{
+	h3{
+		font-size: 30px; text-transform: uppercase; font-weight: bold; color: @body-color; text-align: center;
+		border-bottom: 1px @border-color solid; padding-bottom: 25px; margin-bottom: 28px;
+	}
+}
+
+/*============ button style1=================*/
+.button-style1{
+	.res-button{
+		display:inline-block; position:absolute;
+		top:50%; margin-top:-10px;
+		cursor:pointer; z-index:3;
+		&.slick-prev{
+			left:10px;
+			&:before{
+				content: "\f0d9"; font-family: FontAwesome; font-size: 18px; color: #fff;
+			}
+		}
+		&.slick-next{
+			right:10px;
+			&:before{
+				content: "\f0da"; font-family: FontAwesome; font-size: 18px; color: #fff;
+			}
+		}
+		&:hover{
+			&:before{
+				color: @color;
+			}
+		}
+	}
+}
+
+/*============ button style2=================*/
+.button-style2{
+	.res-button{
+		width:28px;
+		height:28px;
+		display:inline-block;
+		position:absolute;
+		top:-34px;
+		cursor:pointer;
+		//.transition(all 0.3s);
+		&.slick-prev{
+			right:48px;
+			.rtl &{
+				left:15px;
+				right:auto;
+			}
+			background: url(../assets/img/bg_general.png) no-repeat  -20px -1111px;
+			&:hover{
+				background: url(../assets/img/bg_general.png) no-repeat -20px -1063px;
+			}
+		}
+		&.slick-next{
+			right:15px;
+			.rtl &{
+				left:48px;
+				right:auto;
+			}
+			background: url(../assets/img/bg_general.png) no-repeat  -20px -1015px;
+			&:hover{
+				background: url(../assets/img/bg_general.png) no-repeat -20px -967px;
+			}
+		}
+	}
+}
+
+.button-style3{
+	.res-button{
+		display:inline-block; position:absolute; top:50%; margin-top:-50px; 
+		width: 50px; height: 50px; line-height: 47px; border-radius: 50%; border: 1px @border-color solid;
+		cursor:pointer; z-index:3; text-align: center; .transition(alol 0.3s);
+		&.slick-prev{
+			left:-45px;
+			&:before{
+				content: "\f104"; font-family: FontAwesome; font-size: 30px; color: #999;
+			}
+		}
+		&.slick-next{
+			right:-45px;
+			&:before{
+				content: "\f105"; font-family: FontAwesome; font-size: 30px; color: #999;
+			}
+		}
+		&:hover{
+			background: @color; border: none; .transition(alol 0.3s);
+			&:before{
+				color: #fff;
+			}
+		}
+	}
+}
+/*=========== image style=================*/
+.image-style1{
+	a{
+		display: block; overflow: hidden; position: relative; .transition(all 0.3s ease);
+		&:before{
+			content: "";
+			position: absolute;
+			top: -110%;
+			left: -210%;
+			width: 200%;
+			height: 200%;
+			.opacity(0);
+			.rotate(30deg);
+			background: rgba(255, 255, 255, 0.13);
+			background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
+		}
+		&:hover{
+			&:before{
+				.opacity(1);
+				top: -40%;
+				left: -40%;
+				.transition(all 1s ease);
+			}
+		}
+	}
+}
+
+.sale-off{
+	position:absolute;
+	z-index:1;
+	top:10px;
+	right:15px;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	display:inline-block;
+	width:38px;
+	height:38px;
+	border-radius:50%;
+	text-align:center;
+	line-height:38px;
+	background-color:@color;
+	.rtl &{
+		left:15px;
+		right:auto;
+	}
+}
+/*===========button slider=================*/
+.sw-brand-container-slider{
+	border-radius: 4px; border: 1px @border-color solid; margin: 20px 0;
+	.slider .item-brand-cat{
+		margin:0; padding: 14px 0;
+		.item-image a img{
+			.transition(all 0.3s); width:auto; margin: 0 auto;
+			&:hover{
+				opacity:0.85;
+			}
+		}
+	}
+	.res-button{
+		display: none;
+	}
+	&.style1{
+		border: none; margin: 0;
+		.slider .item-brand-cat {
+			padding: 0;
+			.item-image a img{
+				opacity: 0.5;
+				&:hover{
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.furnihome_social {
+	text-align: center;
+	line-height: 19px;
+	.main-social {
+		margin: 0 auto;
+		list-style-type: none;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 10px;
+			a {
+				color: #999999;
+				font-size: 16px;
+				&:hover {
+					color: @color;
+				}
+			}
+		}
+	}
+}
+.yith-wcwl-share{
+	text-align:center;
+}
+
+/* ========================================================== */
+/* ========================================================== */
+.woocommerce a.added_to_cart,
+.added_to_cart.wc-forward {
+	display: none;
+}
+.item-price {
+	font-size: 16px;
+	color: @a-color;
+	overflow:hidden;
+	font-weight: 600;
+	display:flex;
+	del{
+		text-decoration: line-through;
+		color: #999;
+		font-weight: normal;
+		margin:3px 10px 0 0;
+		float: left;
+		font-size:12px;
+		.rtl &{
+			float: right; margin:4px 0 0 10px;
+		}
+	}
+	ins {
+		float: right;
+		margin: 0;
+		text-decoration:none;
+		.rtl &{
+			float: left;
+		}
+	}
+}
+/* ========================================================== */
+/* ========================================================== */
+
+.woocommerce span.onsale,
+.onsale {
+	display:inline-block;
+	height:35px;
+	width:35px;
+	line-height:35px;
+	color:#fff;
+	background-color:#ff5c00;
+	text-transform:capitalize;
+	font-weight: 600;
+	position:absolute;
+	top:15px;
+	right:15px;
+	left:auto;
+}
+
+/* ==================================================== */
+/* ==================================================== */
+.border-tp {
+	border-top: 1px solid #ddd;
+	margin-top: 95px;
+	overflow: visible !important;
+	.order-title {
+		margin-top: -20px;
+	}
+}
+.order-desc {
+	font-family: 'Niconne';
+	font-size: 26px;
+	color: rgba(1, 1, 1, .4);
+}
+.has-left-sidebar{
+	#left{
+		float: left;
+	}
+	.category-contents, .single.main{
+		float: right;
+	}
+	#contents .category-contents{
+		float: none;
+	}
+}
+.has-right-sidebar{
+	#right{
+		float: right;
+	}
+	.category-contents, .single.main{
+		float: left;
+	}
+}
+
+.has-left-product-sidebar{
+	#left{
+		float: left;
+	}
+	#contents-detail, #contents{
+		float: right;
+	}
+}
+.has-right-product-sidebar{
+	#right{
+		float: right;
+	}
+	#contents-detail, #contents{
+		float: left;
+	}
+}
+/*Mail chim*/
+.mc4wp-form{
+	&.mc4wp-form-success{
+		.mc4wp-alert.mc4wp-success{
+			color:green;
+			margin:15px 0;
+		}
+	}
+}
+/* ============================================================ */
+/* ============================================================ */
+
+.furnihome-socials{
+	ul{
+		overflow:hidden;
+		margin-top:30px;
+		margin-bottom:60px;
+		> li{
+			display:inline-block;
+			> a{
+				font-size:22px;
+				color:#fff;
+				margin-right:30px;
+				&:hover{
+					color:#faa600;
+				}
+			}
+		}
+	}
+}
+
+.topsearch-entry{
+	.icon-loading.loading{
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		top: 5px;
+		left: auto;
+		right: 70px;
+		.rtl &{
+			right: auto;
+			left: 70px;
+		}
+		&:before{
+			background-image: url( ../assets/img/loadingp.gif );
+			background-size: 26px 26px;
+		}
+	}
+	.input-group-btn{
+		position: static;
+	}
+	.input-group{
+		display: block;
+	}
+	ul.dropdown-menu{
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		left: -15px;
+		padding: 0;
+		min-width: 300px;
+		text-align: left;
+		border-radius: 0;
+		.rtl &{
+			text-align: right;
+			li > a img{
+				margin-right: 0;
+				margin-left: 10px;
+			}
+		}
+		li{
+			float: none;
+			padding: 0 10px;
+			&:first-child{
+				padding-top: 15px;
+			}
+			&:last-child{
+				padding-bottom: 15px;
+			}
+			&.no-result{
+				padding: 10px;
+			}
+			> a{
+				padding: 0 10px;
+				img{
+					margin-right: 10px;
+				}
+			}
+			.media-body{
+				> a{
+					display: block;
+					margin-bottom: 10px;
+				}
+				.price{
+					color: @color;
+					font-weight: bold;
+					font-size: 12px;
+					ins{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
